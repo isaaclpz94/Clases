@@ -15,6 +15,9 @@
 		62DA09451D95592E00E0AB2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62DA09441D95592E00E0AB2C /* Images.xcassets */; };
 		62DA09481D95592E00E0AB2C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62DA09461D95592E00E0AB2C /* LaunchScreen.xib */; };
 		62DA09541D95592E00E0AB2C /* Ejercicio_1_swiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DA09531D95592E00E0AB2C /* Ejercicio_1_swiftTests.m */; };
+		62DA09621D955A0300E0AB2C /* Planeta2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DA09611D955A0300E0AB2C /* Planeta2.swift */; };
+		62DA09641D955ACE00E0AB2C /* Marte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DA09631D955ACE00E0AB2C /* Marte.swift */; };
+		62DA09661D955D1600E0AB2C /* Jupiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DA09651D955D1600E0AB2C /* Jupiter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		62DA094D1D95592E00E0AB2C /* Ejercicio 1 swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ejercicio 1 swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62DA09521D95592E00E0AB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62DA09531D95592E00E0AB2C /* Ejercicio_1_swiftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ejercicio_1_swiftTests.m; sourceTree = "<group>"; };
+		62DA09611D955A0300E0AB2C /* Planeta2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planeta2.swift; sourceTree = "<group>"; };
+		62DA09631D955ACE00E0AB2C /* Marte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Marte.swift; sourceTree = "<group>"; };
+		62DA09651D955D1600E0AB2C /* Jupiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jupiter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		62DA09331D95592E00E0AB2C /* Ejercicio 1 swift */ = {
 			isa = PBXGroup;
 			children = (
+				62DA095D1D95598700E0AB2C /* POJO */,
 				62DA09381D95592E00E0AB2C /* AppDelegate.h */,
 				62DA09391D95592E00E0AB2C /* AppDelegate.m */,
 				62DA093E1D95592E00E0AB2C /* ViewController.h */,
@@ -120,6 +127,16 @@
 				62DA09521D95592E00E0AB2C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62DA095D1D95598700E0AB2C /* POJO */ = {
+			isa = PBXGroup;
+			children = (
+				62DA09611D955A0300E0AB2C /* Planeta2.swift */,
+				62DA09631D955ACE00E0AB2C /* Marte.swift */,
+				62DA09651D955D1600E0AB2C /* Jupiter.swift */,
+			);
+			name = POJO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,8 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62DA09661D955D1600E0AB2C /* Jupiter.swift in Sources */,
 				62DA093A1D95592E00E0AB2C /* AppDelegate.m in Sources */,
+				62DA09621D955A0300E0AB2C /* Planeta2.swift in Sources */,
 				62DA09371D95592E00E0AB2C /* main.m in Sources */,
+				62DA09641D955ACE00E0AB2C /* Marte.swift in Sources */,
 				62DA09401D95592E00E0AB2C /* ViewController.m in Sources */,
 				62DA093D1D95592E00E0AB2C /* Ejercicio_1_swift.xcdatamodeld in Sources */,
 			);
@@ -351,9 +371,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Ejercicio 1 swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ejercicio 1 swift/Ejercicio 1 swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -361,9 +384,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Ejercicio 1 swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ejercicio 1 swift/Ejercicio 1 swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
